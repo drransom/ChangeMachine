@@ -7,6 +7,7 @@
   <body>
     <form id="change-machine-input">
       $<input type='text' defaultValue='0.00' id='change-machine-input-box'>
+      <input type='submit' value='Submit'>
     </form>
     <section id="change-machine-output"></section>
   </body>
@@ -15,7 +16,8 @@
   <script src="./lib/change_machine_input.js"></script>
   <script>
     window.onload = function() {
-      var x = new window.ChangeMachine.InputArea(document);
+      var y = new window.ChangeMachine.DisplayArea(document.getElementById('change-machine-output'))
+      var x = new window.ChangeMachine.InputArea(document, y);
       x.start();
     }
     </script>
