@@ -1,4 +1,4 @@
-[Live][live]
+[Live demo][live]
 
 [live]: http://drransom.github.io/ChangeMachine
 
