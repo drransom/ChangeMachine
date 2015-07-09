@@ -12,8 +12,8 @@ infinite supply of bills.
 
 I decided to make the UI a simple web page so that I would have something
 the employer could easily interact with. I set up a three-object schema:
-one controller object that created views and calculated the change, and
-one for the input form and one for the answer display.
+one controller object that created views and calculated the change,
+one for the input form, and one for the answer display.
 
 The API for the core function, `ChangeMachine#calculateChange`, is not tied to
 any particular object and is UI-agnostic.
