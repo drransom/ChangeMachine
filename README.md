@@ -11,14 +11,14 @@ using the smallest number of coins/bills. Assume the change machine has an
 infinite supply of bills.
 
 I decided to make the UI a simple web page so that I would have something
-the employer could easily interact with. I set up a general three-object schema:
-one controller object that calculated the change and interacted with the views,
-and two views, one for the input form and one for the answer display. Since
-this is a small app that exists only for demonstration purposes, I took the quick and
+the employer could easily interact with. I set up a three-object schema:
+one controller object that created views and calculated the change, and
+one for the input form and one for the answer display. Since this is a small app
+that exists only for demonstration purposes, I took the quick and
 dirty approach of directly editing `Element.innerHTML` to move elements on and
 off the page.
 
-I avoided any third-party libraries since the project did not require them.
+I did not use any third-party libraries.
 
 Elements of the Problem
 ========================
@@ -30,7 +30,7 @@ so that part of the problem was trivial. The main problems I ran into were:
 * Change machine has to handle an "infinite" amount of money.
 * Change machine has to handle invalid user input.
 
-If you measure by number of digits, 2<sup>32</sup>-1 is not very large, and it's very easy
+If you measure by number of digits, 2<sup>32</sup> - 1 is not very large, and it's very easy
 for a user to enter a much larger number. So the "obvious" approach of using modular
 arithmetic to calculate the change breaks down quite rapidly. However, this particular
 problem is amenable to a much easier solution: the number of hundred dollar bills
