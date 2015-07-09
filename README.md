@@ -40,10 +40,11 @@ The modular arithmetic approach is only needed for the remainder.
 
 By taking this approach, the size of the number that can be processed is limited
 only by the local environment's maximum string size, which allows
-for much larger numbers 2<sup>32</sup> - 1 or even 2<sup>64</sup> - 1.  I'll take
+for much larger numbers than 2<sup>32</sup> - 1 or even 2<sup>64</sup> - 1.  I'll take
 that as an acceptable approximation of "infinity."
 
 I chose to avoid the invalid user input issue by having the app reformat
 the user input on the fly. The `InputArea` parses user input on `change` event,
 ignores any invalid characters, and automatically reformats it into a standard
-numerical format with commas and two digits after the period.
+numerical format with commas and two digits after the period. The `ChangeMachine#calculatechange`
+function simply assumes that the UI object has provided valid input.
