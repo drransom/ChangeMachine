@@ -5,9 +5,18 @@
     <title>Change Machine!</title>
   </head>
   <body>
-    <form id="change-machine-input"></form>
-    <section id="change-machine-output"></form>
+    <form id="change-machine-input">
+      $<input type='text' defaultValue='0.00' id='change-machine-input-box'>
+    </form>
+    <section id="change-machine-output"></section>
   </body>
 
   <script src="./lib/change_machine.js"></script>
+  <script src="./lib/change_machine_input.js"></script>
+  <script>
+    window.onload = function() {
+      var x = new window.ChangeMachine.InputArea(document);
+      x.start();
+    }
+    </script>
 </html>
