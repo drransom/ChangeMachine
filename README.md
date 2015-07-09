@@ -18,6 +18,9 @@ that exists only for demonstration purposes, I took the quick and
 dirty approach of directly editing `Element.innerHTML` to move elements on and
 off the page.
 
+The API for the core function, `ChangeMachine#calculateChange`, is not tied to
+any particular object and is UI-agnostic.
+
 I did not use any third-party libraries.
 
 Elements of the Problem
