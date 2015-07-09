@@ -46,5 +46,6 @@ that as an acceptable approximation of "infinity."
 I chose to avoid the invalid user input issue by having the app reformat
 the user input on the fly. The `InputArea` parses user input on `change` event,
 ignores any invalid characters, and automatically reformats it into a standard
-numerical format with commas and two digits after the period. The `ChangeMachine#calculatechange`
-function simply assumes that the UI object has provided valid input.
+numerical format with commas and two digits after the period.
+
+The `ChangeMachine#calculatechange` function simply assumes that the UI object has provided valid input.
