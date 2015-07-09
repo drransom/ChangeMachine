@@ -1,6 +1,6 @@
 [Live][live]
 
-[live]: drransom.github.io/ChangeMachine
+[live]: http://drransom.github.io/ChangeMachine
 
 Making Change
 =============
