@@ -28,7 +28,7 @@ pretty pathological, but American coins and bills are easy to make change with,
 so that part of the problem was trivial. The main problems I ran into were:
 
 * Change machine has to handle an "infinite" amount of money.
-* Change machine has to handle invalid user input.
+* User input validation.
 
 If you measure by number of digits, 2<sup>32</sup> - 1 is not very large, and it's very easy
 for a user to enter a much larger number. So the "obvious" approach of using modular
