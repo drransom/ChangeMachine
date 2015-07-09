@@ -6,16 +6,22 @@
   </head>
   <body>
     <main>
+      <h1>Change Calculator for USD!</h1>
       <form id="change-machine-input">
-        $<input type='text' defaultValue='0.00' id='change-machine-input-box'>
+        $<input type='text' defaultvalue='0.00' id='change-machine-input-box' placeholder='0.00'>
         <input type='submit' value='Find Change!'>
       </form>
       <section id="change-machine-output"></section>
     </main>
   </body>
+  <footer>
+    Prepared by Elliot Reed. Find me on <a href="https://www.linkedin.com/in/elliotcreed">LinkedIn</a>
+    or back to the <a href ="https://github.com/drransom/ChangeMachine">Github repo</a>.
+  </footer>
 
   <script src="./lib/change_machine.js"></script>
   <script src="./lib/change_machine_input.js"></script>
+  <link href="./change_machine_styles.css" rel="stylesheet" media="screen" type="text/css">
   <script>
     window.onload = function() {
       var machine = new window.ChangeMachine.Machine(document.getElementsByTagName('main')[0])
